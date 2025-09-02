@@ -11,6 +11,9 @@ const withPWA = require("next-pwa")({
 });
 
 const nextConfig: NextConfig = withPWA({
+  basePath: '/test-pwa',
+  assetPrefix: '/test-pwa',
+  output: 'export',
   eslint: {
     dirs: ["src"],
     ignoreDuringBuilds: true,
